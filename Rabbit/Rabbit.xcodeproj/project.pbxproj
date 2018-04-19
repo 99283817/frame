@@ -13,6 +13,7 @@
 		0430FCB82080A46E000FDA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0430FCB72080A46E000FDA6C /* Assets.xcassets */; };
 		0430FCBB2080A46E000FDA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430FCB92080A46E000FDA6C /* LaunchScreen.storyboard */; };
 		0430FCBE2080A46E000FDA6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0430FCBD2080A46E000FDA6C /* main.m */; };
+		7CBF51CF19379CA32295C3DB /* libPods-Rabbit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36841FE896CFD0F34659C7F3 /* libPods-Rabbit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		0430FCBD2080A46E000FDA6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0430FCC42080A48E000FDA6C /* TZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZCommon.h; sourceTree = "<group>"; };
 		0430FCC52080A48E000FDA6C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		36841FE896CFD0F34659C7F3 /* libPods-Rabbit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabbit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37FDF1B894EF82385F573FDE /* Pods-Rabbit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabbit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rabbit/Pods-Rabbit.release.xcconfig"; sourceTree = "<group>"; };
+		A097B90D5A9826A82696A7A1 /* Pods-Rabbit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabbit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rabbit/Pods-Rabbit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBF51CF19379CA32295C3DB /* libPods-Rabbit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				0430FCAD2080A46A000FDA6C /* Rabbit */,
 				0430FCAC2080A46A000FDA6C /* Products */,
+				E4446FDB4CD643EF63558F66 /* Pods */,
+				FBE5487DB3EAFF5225D49F8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			path = Rabbit;
 			sourceTree = "<group>";
 		};
+		E4446FDB4CD643EF63558F66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A097B90D5A9826A82696A7A1 /* Pods-Rabbit.debug.xcconfig */,
+				37FDF1B894EF82385F573FDE /* Pods-Rabbit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBE5487DB3EAFF5225D49F8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36841FE896CFD0F34659C7F3 /* libPods-Rabbit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0430FCC12080A46E000FDA6C /* Build configuration list for PBXNativeTarget "Rabbit" */;
 			buildPhases = (
+				C6DDB51E843D69C2FF8DB8C8 /* [CP] Check Pods Manifest.lock */,
 				0430FCA72080A46A000FDA6C /* Sources */,
 				0430FCA82080A46A000FDA6C /* Frameworks */,
 				0430FCA92080A46A000FDA6C /* Resources */,
+				7D81BF8BAB3B55F99AA8C989 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +165,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D81BF8BAB3B55F99AA8C989 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rabbit/Pods-Rabbit-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rabbit/Pods-Rabbit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DDB51E843D69C2FF8DB8C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabbit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0430FCA72080A46A000FDA6C /* Sources */ = {
@@ -285,6 +352,7 @@
 		};
 		0430FCC22080A46E000FDA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A097B90D5A9826A82696A7A1 /* Pods-Rabbit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,10 +361,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Rabbit/PrefixHeader.pch";
 				INFOPLIST_FILE = Rabbit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liu.Rabbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,6 +370,7 @@
 		};
 		0430FCC32080A46E000FDA6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FDF1B894EF82385F573FDE /* Pods-Rabbit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,10 +379,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Rabbit/PrefixHeader.pch";
 				INFOPLIST_FILE = Rabbit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liu.Rabbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

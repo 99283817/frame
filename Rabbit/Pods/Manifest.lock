@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (5.0.7)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.15.1)
+  - NullSafe (1.2.3)
+  - Reachability (3.2)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WCDB (1.0.6):
+    - WCDB/sqlcipher (= 1.0.6)
+  - WCDB/sqlcipher (1.0.6)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - Masonry
+  - MJRefresh (= 3.1.15.1)
+  - NullSafe
+  - Reachability
+  - SDWebImage
+  - "UITableView+FDTemplateLayoutCell"
+  - WCDB
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MJRefresh
+    - NullSafe
+    - Reachability
+    - SDWebImage
+    - "UITableView+FDTemplateLayoutCell"
+    - WCDB
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  NullSafe: c5dde0d07fe0136a8194d6af9e285b0322b6c068
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WCDB: 4d2926bf695b2e00d785b50afd32c2dcc8cbbd98
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 3066d30e1e3ecdef6fb82fa8dc49e98f97b9369d
+
+COCOAPODS: 1.5.0
