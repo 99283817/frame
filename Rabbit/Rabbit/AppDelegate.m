@@ -13,7 +13,7 @@
 @end
 
 @implementation AppDelegate
-
+// 当前的导航控制器是否可以旋转
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window  = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -53,6 +53,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
 
+    if (_isLandscape) {
+        UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+        if (orientation == UIDeviceOrientationLandscapeLeft || orientation == UIDeviceOrientationLandscapeRight) {
+            return UIInterfaceOrientationMaskLandscape;
+        } else { // 横屏后旋转屏幕变为竖屏
+            return UIInterfaceOrientationMaskPortrait;
+        }
+    }
+    else
+    {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+
+}
 
 @end
