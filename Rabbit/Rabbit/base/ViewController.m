@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"测试";
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(10, 200, SCREEN_WIDTH-20, 300)];
     view.backgroundColor = [UIColor purpleColor];
     [self.view addSubview: view];

@@ -64,6 +64,8 @@
     [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
     //刷新
     [UIViewController attemptRotationToDeviceOrientation];
+    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.tabBarController.tabBar.hidden = NO;
 }
 
 

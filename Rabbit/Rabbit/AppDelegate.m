@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "TZTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,11 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window  = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController * vc = [ViewController new];
+    TZTabBarViewController * tabvc = [TZTabBarViewController new];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    //    nav.navigationController set
-    self.window.rootViewController = nav;
+    self.window.rootViewController = tabvc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyWindow];
     return YES;
