@@ -21,6 +21,7 @@
 		04D1E4EA2134F9690055D406 /* TZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4E92134F9690055D406 /* TZNavigationController.m */; };
 		04D1E4EF21351C040055D406 /* TZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4EE21351C040055D406 /* TZMainViewController.m */; };
 		04D1E4F221351C160055D406 /* TZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4F121351C160055D406 /* TZMineViewController.m */; };
+		04D1E4F821369D850055D406 /* zhanshi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04D1E4F721369D850055D406 /* zhanshi.jpeg */; };
 		04EEB79C20898C830084E1CC /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB79B20898C830084E1CC /* UIButton+EnlargeEdge.m */; };
 		04EEB7A020898CD10084E1CC /* NSString+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB79F20898CD10084E1CC /* NSString+Null.m */; };
 		04EEB7A820898D240084E1CC /* Style309View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB7A420898D240084E1CC /* Style309View.m */; };
@@ -58,6 +59,7 @@
 		04D1E4EE21351C040055D406 /* TZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZMainViewController.m; sourceTree = "<group>"; };
 		04D1E4F021351C160055D406 /* TZMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZMineViewController.h; sourceTree = "<group>"; };
 		04D1E4F121351C160055D406 /* TZMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZMineViewController.m; sourceTree = "<group>"; };
+		04D1E4F721369D850055D406 /* zhanshi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zhanshi.jpeg; sourceTree = "<group>"; };
 		04EEB79A20898C830084E1CC /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
 		04EEB79B20898C830084E1CC /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
 		04EEB79E20898CD10084E1CC /* NSString+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Null.h"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		0430FCAD2080A46A000FDA6C /* Rabbit */ = {
 			isa = PBXGroup;
 			children = (
+				04D1E4F421369B6F0055D406 /* 测试 */,
 				04D1E4F3213533D20055D406 /* base */,
 				04D1E4EC21351BD30055D406 /* 首页 */,
 				04D1E4EB21351B980055D406 /* 我的 */,
@@ -123,13 +126,13 @@
 			path = Rabbit;
 			sourceTree = "<group>";
 		};
-		045E478C20B50BB600F448AE /* 横竖屏分类 */ = {
+		045E478C20B50BB600F448AE /* 横竖屏 */ = {
 			isa = PBXGroup;
 			children = (
 				045E478920AC24E600F448AE /* TZtestViewController.h */,
 				045E478A20AC24E600F448AE /* TZtestViewController.m */,
 			);
-			path = "横竖屏分类";
+			path = "横竖屏";
 			sourceTree = "<group>";
 		};
 		04D1E4EB21351B980055D406 /* 我的 */ = {
@@ -153,8 +156,6 @@
 		04D1E4F3213533D20055D406 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				0430FCB12080A46A000FDA6C /* ViewController.h */,
-				0430FCB22080A46A000FDA6C /* ViewController.m */,
 				04D1E4E52134F9220055D406 /* TZTabBarViewController.h */,
 				04D1E4E62134F9220055D406 /* TZTabBarViewController.m */,
 				04D1E4E82134F9690055D406 /* TZNavigationController.h */,
@@ -163,18 +164,36 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		04D1E4F421369B6F0055D406 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				0430FCB12080A46A000FDA6C /* ViewController.h */,
+				0430FCB22080A46A000FDA6C /* ViewController.m */,
+				045E478C20B50BB600F448AE /* 横竖屏 */,
+			);
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		04D1E4F621369C410055D406 /* 屏幕多按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				04D1E4F721369D850055D406 /* zhanshi.jpeg */,
+				045E478020AC1FE800F448AE /* TZcategoryScrollView.h */,
+				045E478120AC1FE800F448AE /* TZcategoryScrollView.m */,
+			);
+			path = "屏幕多按钮";
+			sourceTree = "<group>";
+		};
 		04EEB79820898C6E0084E1CC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04D1E4F621369C410055D406 /* 屏幕多按钮 */,
 				04EEB7AB20898ECB0084E1CC /* UIView+Extension.h */,
 				04EEB7AC20898ECB0084E1CC /* UIView+Extension.m */,
 				045E478320AC20F400F448AE /* UILabel+Extension.h */,
 				045E478420AC20F500F448AE /* UILabel+Extension.m */,
-				045E478C20B50BB600F448AE /* 横竖屏分类 */,
 				045E478620AC213F00F448AE /* UIColor+Hex.h */,
 				045E478720AC214000F448AE /* UIColor+Hex.m */,
-				045E478020AC1FE800F448AE /* TZcategoryScrollView.h */,
-				045E478120AC1FE800F448AE /* TZcategoryScrollView.m */,
 				04EEB7A120898D240084E1CC /* 309图文底层 */,
 				04EEB79D20898CD10084E1CC /* Nsstring+Null */,
 				04EEB79920898C830084E1CC /* 扩大buton的点击范围 */,
@@ -288,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0430FCBB2080A46E000FDA6C /* LaunchScreen.storyboard in Resources */,
+				04D1E4F821369D850055D406 /* zhanshi.jpeg in Resources */,
 				0430FCB82080A46E000FDA6C /* Assets.xcassets in Resources */,
 				0430FCB62080A46A000FDA6C /* Main.storyboard in Resources */,
 			);

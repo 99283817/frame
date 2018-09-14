@@ -26,8 +26,8 @@
      //设置文字颜色
    
     [self configUIWithTitle:@"首页" nomeImage:@"eat-zan-1" selectedImage:@"eat-zan" viewVC:[TZMainViewController new]];
-    [self configUIWithTitle:@"我的" nomeImage:@"eat-sc-1" selectedImage:@"eat-sc" viewVC:[TZMineViewController new]];
     [self configUIWithTitle:@"测试" nomeImage:@"eat-sc-1" selectedImage:@"eat-sc" viewVC:[ViewController new]];
+    [self configUIWithTitle:@"我的" nomeImage:@"eat-sc-1" selectedImage:@"eat-sc" viewVC:[TZMineViewController new]];
 }
 
 
