@@ -17,6 +17,8 @@
 		045E478520AC20F500F448AE /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E478420AC20F500F448AE /* UILabel+Extension.m */; };
 		045E478820AC214000F448AE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E478720AC214000F448AE /* UIColor+Hex.m */; };
 		045E478B20AC24E600F448AE /* TZtestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E478A20AC24E600F448AE /* TZtestViewController.m */; };
+		04CEE94C222E243E009CCA4A /* Style309View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CEE94A222E243E009CCA4A /* Style309View.m */; };
+		04CEE94D222E243E009CCA4A /* Style309TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CEE94B222E243E009CCA4A /* Style309TableViewCell.m */; };
 		04D1E4E72134F9220055D406 /* TZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4E62134F9220055D406 /* TZTabBarViewController.m */; };
 		04D1E4EA2134F9690055D406 /* TZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4E92134F9690055D406 /* TZNavigationController.m */; };
 		04D1E4EF21351C040055D406 /* TZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1E4EE21351C040055D406 /* TZMainViewController.m */; };
@@ -24,8 +26,6 @@
 		04D1E4F821369D850055D406 /* zhanshi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04D1E4F721369D850055D406 /* zhanshi.jpeg */; };
 		04EEB79C20898C830084E1CC /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB79B20898C830084E1CC /* UIButton+EnlargeEdge.m */; };
 		04EEB7A020898CD10084E1CC /* NSString+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB79F20898CD10084E1CC /* NSString+Null.m */; };
-		04EEB7A820898D240084E1CC /* Style309View.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB7A420898D240084E1CC /* Style309View.m */; };
-		04EEB7AA20898D240084E1CC /* Style309TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB7A720898D240084E1CC /* Style309TableViewCell.m */; };
 		04EEB7AD20898ECB0084E1CC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEB7AC20898ECB0084E1CC /* UIView+Extension.m */; };
 		7CBF51CF19379CA32295C3DB /* libPods-Rabbit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36841FE896CFD0F34659C7F3 /* libPods-Rabbit.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,10 @@
 		045E478720AC214000F448AE /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		045E478920AC24E600F448AE /* TZtestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZtestViewController.h; sourceTree = "<group>"; };
 		045E478A20AC24E600F448AE /* TZtestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZtestViewController.m; sourceTree = "<group>"; };
+		04CEE948222E243D009CCA4A /* Style309View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style309View.h; sourceTree = "<group>"; };
+		04CEE949222E243E009CCA4A /* Style309TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style309TableViewCell.h; sourceTree = "<group>"; };
+		04CEE94A222E243E009CCA4A /* Style309View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style309View.m; sourceTree = "<group>"; };
+		04CEE94B222E243E009CCA4A /* Style309TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style309TableViewCell.m; sourceTree = "<group>"; };
 		04D1E4E52134F9220055D406 /* TZTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZTabBarViewController.h; sourceTree = "<group>"; };
 		04D1E4E62134F9220055D406 /* TZTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZTabBarViewController.m; sourceTree = "<group>"; };
 		04D1E4E82134F9690055D406 /* TZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZNavigationController.h; sourceTree = "<group>"; };
@@ -64,10 +68,6 @@
 		04EEB79B20898C830084E1CC /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
 		04EEB79E20898CD10084E1CC /* NSString+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Null.h"; sourceTree = "<group>"; };
 		04EEB79F20898CD10084E1CC /* NSString+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Null.m"; sourceTree = "<group>"; };
-		04EEB7A320898D240084E1CC /* Style309TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style309TableViewCell.h; sourceTree = "<group>"; };
-		04EEB7A420898D240084E1CC /* Style309View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style309View.m; sourceTree = "<group>"; };
-		04EEB7A620898D240084E1CC /* Style309View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style309View.h; sourceTree = "<group>"; };
-		04EEB7A720898D240084E1CC /* Style309TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Style309TableViewCell.m; sourceTree = "<group>"; };
 		04EEB7AB20898ECB0084E1CC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		04EEB7AC20898ECB0084E1CC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		36841FE896CFD0F34659C7F3 /* libPods-Rabbit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabbit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +135,17 @@
 			path = "横竖屏";
 			sourceTree = "<group>";
 		};
+		04CEE947222E242C009CCA4A /* 309图文底层 */ = {
+			isa = PBXGroup;
+			children = (
+				04CEE949222E243E009CCA4A /* Style309TableViewCell.h */,
+				04CEE94B222E243E009CCA4A /* Style309TableViewCell.m */,
+				04CEE948222E243D009CCA4A /* Style309View.h */,
+				04CEE94A222E243E009CCA4A /* Style309View.m */,
+			);
+			path = "309图文底层";
+			sourceTree = "<group>";
+		};
 		04D1E4EB21351B980055D406 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +198,7 @@
 		04EEB79820898C6E0084E1CC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				04CEE947222E242C009CCA4A /* 309图文底层 */,
 				04D1E4F621369C410055D406 /* 屏幕多按钮 */,
 				04EEB7AB20898ECB0084E1CC /* UIView+Extension.h */,
 				04EEB7AC20898ECB0084E1CC /* UIView+Extension.m */,
@@ -194,7 +206,6 @@
 				045E478420AC20F500F448AE /* UILabel+Extension.m */,
 				045E478620AC213F00F448AE /* UIColor+Hex.h */,
 				045E478720AC214000F448AE /* UIColor+Hex.m */,
-				04EEB7A120898D240084E1CC /* 309图文底层 */,
 				04EEB79D20898CD10084E1CC /* Nsstring+Null */,
 				04EEB79920898C830084E1CC /* 扩大buton的点击范围 */,
 			);
@@ -217,17 +228,6 @@
 				04EEB79F20898CD10084E1CC /* NSString+Null.m */,
 			);
 			path = "Nsstring+Null";
-			sourceTree = "<group>";
-		};
-		04EEB7A120898D240084E1CC /* 309图文底层 */ = {
-			isa = PBXGroup;
-			children = (
-				04EEB7A320898D240084E1CC /* Style309TableViewCell.h */,
-				04EEB7A720898D240084E1CC /* Style309TableViewCell.m */,
-				04EEB7A620898D240084E1CC /* Style309View.h */,
-				04EEB7A420898D240084E1CC /* Style309View.m */,
-			);
-			path = "309图文底层";
 			sourceTree = "<group>";
 		};
 		E4446FDB4CD643EF63558F66 /* Pods */ = {
@@ -363,8 +363,8 @@
 			files = (
 				04EEB7AD20898ECB0084E1CC /* UIView+Extension.m in Sources */,
 				0430FCB32080A46A000FDA6C /* ViewController.m in Sources */,
+				04CEE94D222E243E009CCA4A /* Style309TableViewCell.m in Sources */,
 				04EEB7A020898CD10084E1CC /* NSString+Null.m in Sources */,
-				04EEB7AA20898D240084E1CC /* Style309TableViewCell.m in Sources */,
 				04EEB79C20898C830084E1CC /* UIButton+EnlargeEdge.m in Sources */,
 				04D1E4EA2134F9690055D406 /* TZNavigationController.m in Sources */,
 				045E478220AC1FE800F448AE /* TZcategoryScrollView.m in Sources */,
@@ -376,7 +376,7 @@
 				04D1E4EF21351C040055D406 /* TZMainViewController.m in Sources */,
 				04D1E4E72134F9220055D406 /* TZTabBarViewController.m in Sources */,
 				045E478B20AC24E600F448AE /* TZtestViewController.m in Sources */,
-				04EEB7A820898D240084E1CC /* Style309View.m in Sources */,
+				04CEE94C222E243E009CCA4A /* Style309View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
