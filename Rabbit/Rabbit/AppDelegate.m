@@ -13,6 +13,7 @@
 @end
 //1
 //2
+//3
 @implementation AppDelegate
 // 当前的导航控制器是否可以旋转
 
