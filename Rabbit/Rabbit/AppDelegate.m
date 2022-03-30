@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window  = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     TZTabBarViewController * tabvc = [TZTabBarViewController new];
-    
+//    5
     self.window.rootViewController = tabvc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyWindow];
